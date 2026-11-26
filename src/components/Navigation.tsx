@@ -74,7 +74,7 @@ export default function Navigation({ light = false }: { light?: boolean }) {
         <div className="relative z-10 flex items-center gap-1">
           <a href="/sign-in" className="hdr-link hidden h-[42px] items-center rounded-lg px-4 text-[14px] text-fg/90 transition hover:bg-white/[.06] sm:inline-flex">Sign in</a>
           <a href="/contact" onClick={() => track("cta_start_building_nav")}
-            className="inline-flex h-[42px] items-center justify-center rounded-lg px-5 font-mono text-[11px] uppercase leading-[14px] tracking-[0.04em] text-white shadow-[inset_0_1px_0_rgba(255,255,255,.35),0_8px_24px_-8px_rgba(239,90,0,.8)] transition hover:brightness-110 active:scale-[.98] sm:w-[119px]"
+            className="inline-flex h-[42px] items-center justify-center whitespace-nowrap rounded-lg px-5 font-mono text-[11px] uppercase leading-[14px] tracking-[0.06em] text-white shadow-[inset_0_1px_0_rgba(255,255,255,.35),0_8px_24px_-8px_rgba(239,90,0,.8)] transition hover:brightness-110 active:scale-[.98]"
             style={{ background: "linear-gradient(155.7deg,#f7732b 13.97%,#ef5a00 60%,#c94a00)" }}>Start Building</a>
           <button className="ml-1 flex h-10 w-10 flex-col items-center justify-center gap-[5px] lg:hidden" aria-label={mobile ? "Close menu" : "Open menu"} aria-expanded={mobile} onClick={() => setMobile(!mobile)}>
             <span className={`h-px w-5 bg-white transition-transform duration-300 ${mobile ? "translate-y-[3px] rotate-45" : ""}`} />
